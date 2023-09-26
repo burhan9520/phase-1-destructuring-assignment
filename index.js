@@ -1,29 +1,86 @@
-const farmAnimals = 'cow horse sheep pig chicken';
-
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-
-const muppet = {
-  muppetName: 'Miss Piggy',
-  color: 'pink',
-  song: 'Never Before, Never Again',
-  job: 'Cast member of The Muppet Show',
-  partner: 'Kermit'
+// Test 1: 
+const { moo, neigh, baa, oink, cluck } = {
+  moo: "cow",
+  neigh: "horse",
+  baa: "sheep",
+  oink: "pig",
+  cluck: "chicken",
 };
 
-const nestedMuppet = {
-  nestedName: 'Kermit',
-  nestedColor: 'green',
-  album: {
-    theMuppetMovie: {
-      song1: 'Rainbow Connection',
-      song2: 'Moving Right Along',
-      song3: 'Never Before, Never Again',
-      song4: 'I Hope That Something Better Comes Along',
-    },
-  },
-  nestedJob: 'Host of The Muppet Show',
-  nestedPartner: 'Miss Piggy'
+// Test 2: 
+const { bessie, dolly, babe, little } = {
+  bessie: "cow",
+  dolly: "sheep",
+  babe: "pig",
+  little: "chicken",
 };
+
+// Test 3: 
+const { blackAndWhite, black, pink } = {
+  blackAndWhite: "cow",
+  black: "sheep",
+  pink: "pig",
+};
+
+// Test 4: 
+const [red, orange, yellow, green, blue, indigo, violet] = [
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "indigo",
+  "violet",
+];
+
+// Test 5: 
+const [r, o, y, g, b, , v] = [
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "indigo",
+  "violet",
+];
+// Test 6:
+
+const { indg } = { indg: "indigo" };
+// Test 7:
+const {
+  muppetName,
+  color,
+  song,
+  job,
+  partner,
+} = {
+  muppetName: "Miss Piggy",
+  color: "pink",
+  song: "Never Before, Never Again",
+  job: "Cast member of The Muppet Show",
+  partner: "Kermit",
+};
+
+// Test 8: Destructuring for songs 
+const {
+  song: song2,
+  song4,
+  job: nestedJob,
+  partner: nestedPartner,
+} = {
+  song: "Moving Right Along",
+  song2: "Some Other Song",
+  song4: "I Hope That Something Better Comes Along",
+  job: "Host of The Muppet Show",
+  partner: "Miss Piggy",
+};
+
+
+
+
+
+
+
 
 // Strings
 
